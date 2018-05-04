@@ -8,12 +8,12 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: /* Ubuntu, sans-serif */;
-    color: /* #xxxxxx */;
+    color: darkblue;
 }
 
 h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+    color: darkgreen;
 }
 
 h2 {
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: /* */;
+    background-color: cornflowerblue;
     color: whitesmoke;
 }
 
