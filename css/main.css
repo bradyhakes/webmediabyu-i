@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: darkgreen;
+    color: sandybrown;
 }
 
 h2 {
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: darkgreen;
     color: whitesmoke;
 }
 
