@@ -1,0 +1,48 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+font-family: sans-serif
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  /*max-width: ______;  Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {overflow: auto;}
+header h1 {}
+header img {float: left;}
+header .subheading {}
+
+nav{ float: none;}
+nav button {}
+nav ul { background-color: #EA9E32}
+nav ul li {}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+nav ul li.active a {}
+nav ul li a:hover {color: #25218D}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+.medium{height: 250px}
+
+footer {text-align: center;}
+.footer-bar{
+    padding: 5px;
+    background-color: #EA9E32;
+    color: white
+}
+
+.forecast {display: none;}
+.icon{height: 125px}
+.banner{width: 98%}
+.contact{
+    color: white;
+    background-color: #229E6F}
