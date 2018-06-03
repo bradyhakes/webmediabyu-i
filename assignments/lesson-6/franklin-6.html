@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tri-city area forecast|Franklin</title>
+    <meta name="description" content=" home page for the tri-city area weather ">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/PT+Serif?selection.family=PT+Serif-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/hamburger.js"></script>
+</head>
+<body>
+
+  <header>
+      <img src="images/small-icon.jpg" class="icon" alt="logo">
+      <h1>Tri-city area forecast</h1>
+      <h2>For weather all over the entire Tri-city area</h2>
+  </header>
+
+  <nav>
+    <button onclick="togglemenu()">&#9776;</button>
+    <ul id="ham" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      <picture>
+          <source media="(min-width: 64em)" srcset="images/franklin-large.jpg">
+          <source media="(min-width: 37.5em)" srcset="images/franklin-medeum.jpg">
+          <img class="banner" alt="franklin weather" src="images/franklin-small.jpg">
+      </picture>
+    <h1>Franklin Forecast</h1>
+    <section class="weather-summary">
+        <div class="highlow">
+        <h2>Today's Wether</h2>    
+          <ul>
+            <li>High: 90&deg;</li>
+            <li>Low: 66&deg;</li>
+            <li>Chance of Precipitation: 0%</li>
+            <li>Wind: 5mph from the South West</li>
+          </ul> 
+      </div>
+      <div class="current">
+          <h2>Curent Weather: Sunny</h2>
+        <picture>
+            <img src="images/sunny-large.jpg" class="icon" alt="sunny">
+        </picture>
+      </div>              
+    </section>
+        
+    <section class="forecast">
+      <h2>Forecast Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h2>Franklin Breaks Record</h2>	
+      <img src="images/small-history.jpg" class="medium" alt="letters">
+      <p class="town-article">
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <div class="contact">
+          <div>
+              <strong>Address:</strong><br>
+              The Weather Center<br>
+              123 Main Steet<br>
+              Franklin, Mi 1234<br>
+        </div>
+        <div>
+            <strong>Phone:</strong><br>
+            (555)555-5555<br>
+            <strong>Email:</strong><br>
+            contact@email.com
+        </div>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/currentdate.js"></script>
+</body>
+</html>
