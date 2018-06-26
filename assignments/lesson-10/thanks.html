@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tri-city area forecast|Franklin</title>
+    <meta name="description" content=" home page for the tri-city area weather ">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/PT+Serif?selection.family=PT+Serif-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/hamburger.js"></script>
+    <script src="js/rating.js"></script>
+</head>
+<body>
+
+  <header>
+      <img src="images/small-icon.jpg" class="icon" alt="logo">
+      <div>
+      <h1>Tri-city area forecast</h1>
+      <h2>For weather all over the entire Tri-city area</h2>
+      </div>
+  </header>
+
+  <nav>
+    <button onclick="togglemenu()">&#9776;</button>
+    <ul id="ham" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    <main>
+        <h1>thanks for reporting this storm</h1>
+    </main>
+<footer>
+    <div class="contact">
+          <div>
+              <strong>Address:</strong><br>
+              The Weather Center<br>
+              123 Main Steet<br>
+              Franklin, Mi 1234<br>
+        </div>
+        <div>
+            <strong>Phone:</strong><br>
+            (555)555-5555<br>
+            <strong>Email:</strong><br>
+            contact@email.com
+        </div>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/currentdate.js"></script>
+<script src="js/windchill.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tri-city area forecast|Franklin</title>
+    <meta name="description" content=" home page for the tri-city area weather ">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/PT+Serif?selection.family=PT+Serif-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/hamburger.js"></script>
+    <script src="js/rating.js"></script>
+</head>
+<body>
+
+  <header>
+      <img src="images/small-icon.jpg" class="icon" alt="logo">
+      <div>
+      <h1>Tri-city area forecast</h1>
+      <h2>For weather all over the entire Tri-city area</h2>
+      </div>
+  </header>
+
+  <nav>
+    <button onclick="togglemenu()">&#9776;</button>
+    <ul id="ham" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>		
+    <main>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>Full Name*<input type="text" name="fname" pattern=".{5,}" required autofocus></label>
+                <label>Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+                <label>Zip Code*<input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>strom data</legend>
+                <label>Storm date<input type="date" name="sDate" ></label>
+                <label>Storm type<input list="stormT" name="stormT" >
+                <datalist id="stormT">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                </label>
+                <label>Storm Severity<input type="range" name="stormS" id="rating" value="4" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                </label>
+                <label>Storm Region
+                    <select name="subject">
+                        <option>please select</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional info</legend>
+                <label>Are you in danger?</label>
+                <div class="radio">
+                    <input type="radio" name="Danger" value="yes">yes
+                    <input type="radio" name="Danger" value="maybe">maybe
+                    <input type="radio" name="Danger" value="no">no
+                </div>
+                <label>Aditional information
+                    <br>
+                    <textarea name="additional" rows="4" cols="50"></textarea></label>
+            </fieldset>
+            <input type="submit" value="report storm">
+        </form>
+    
+    </main>
+  <footer>
+    <div class="contact">
+          <div>
+              <strong>Address:</strong><br>
+              The Weather Center<br>
+              123 Main Steet<br>
+              Franklin, Mi 1234<br>
+        </div>
+        <div>
+            <strong>Phone:</strong><br>
+            (555)555-5555<br>
+            <strong>Email:</strong><br>
+            contact@email.com
+        </div>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/currentdate.js"></script>
+<script src="js/windchill.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tri-city area forecast|Home</title>
+    <meta name="description" content=" home page for the tri-city area weather ">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/PT+Serif?selection.family=PT+Serif-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/hamburger.js"></script>
+</head>
+<body>
+
+  <header>
+      <img src="images/small-icon.jpg" class="icon" alt="logo">
+      <div>
+      <h1>Tri-city area forecast</h1>
+      <h2>For weather all over the entire Tri-city area</h2>
+      </div>
+  </header>
+
+  <nav>
+    <button onclick="togglemenu()">&#9776;</button>
+    <ul id="ham" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>      
+    <article>
+      <h2>Franklin Breaks Record</h2>
+        <div id="history">
+      <img src="images/small-history.jpg" class="medium" alt="letters">
+      <p class="town-article">
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+          Bacon ipsum dolor amet sirloin beef ribs
+          hamburger ball tip, venison chicken jowl
+          picanha biltong drumstick prosciutto corned
+          beef pastrami pork belly alcatra.
+          Tongue pig ribeye beef frankfurter
+          jerky shoulder short ribs
+      </p>
+    </div>
+    </article>
+      <div id="towns">
+      <section class="town">
+          <h2>Franklin</h2>
+          <br> <br>
+          <p>Moto: <span id="fMoto"></span><br>
+              Founded: <span id="fFounded"></span><br>
+              Population: <span id="fPop"></span><br>
+              Annual Rainfall: <span id="fRain">"</span>
+          </p>
+          <br>
+          <img src="images/franklin-small.jpg" class="icon">
+      </section>
+      <section class="town">
+          <h2>Greenville</h2>
+          <br> <br>
+          <p>Moto: <span id="gMoto"></span><br>
+              Founded: <span id="gFounded"></span><br>
+              Population: <span id="gPop"></span><br>
+              Annual Rainfall: <span id="gRain">"</span>
+          </p>
+          <br>
+          <img src="images/franklin-small.jpg" class="icon">
+      </section>
+      <section class="town">
+          <h2>Springfield</h2>
+          <br> <br>
+          <p>Moto: <span id="sMoto"></span><br>
+              Founded: <span id="sFounded"></span><br>
+              Population: <span id="sPop"></span><br>
+              Annual Rainfall: <span id="sRain">"</span>
+          </p>
+          <br>
+          <img src="images/franklin-small.jpg" class="icon">
+      </section>
+      </div>
+  </main>
+    
+  <footer>
+    <div class="contact">
+          <div>
+              <strong>Address:</strong><br>
+              The Weather Center<br>
+              123 Main Steet<br>
+              Franklin, Mi 1234<br>
+        </div>
+        <div>
+            <strong>Phone:</strong><br>
+            (555)555-5555<br>
+            <strong>Email:</strong><br>
+            contact@email.com
+        </div>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/townapi.js"></script>
+<script src="js/rating.js"></script>
+<script src="js/currentdate.js"></script>
+<!--<script src="js/windchill.js"></script>-->
+</body>
+</html>
