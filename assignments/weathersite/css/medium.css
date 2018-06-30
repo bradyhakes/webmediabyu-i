@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em){
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    nav ul {
+       flex-direction: row;
+}
+    nav ul.hide{
+        display: flex;
+ 
+    }
+    .current{}
+    
+    #history p{}
+    
+    #history img {}
+    
+    #history{display: flex;
+    flex-direction: row-reverse;}
+    
+    section.forecast { display: contents; }  /* show the 10-day forecast with the medium view and up */
+    
+    .weather-summary{
+    display: -webkit-flex;
+    display: flex;
+}
+    .weather-summary div{
+        -webkit-flex: 1;
+                flex: 1;
+}
+   .contact{
+    display: -webkit-flex;
+    display: flex;
+}
+    .contact div{
+        -webkit-flex: 1;
+                flex: 1; 
+    }
+    #wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #wrap img{width: 100%;}
+
+  }
