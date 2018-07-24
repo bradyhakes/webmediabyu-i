@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em){
+    
+    
+    #ride{display: none;}
+    #rideL{
+        display: contents;
+        text-align: right;
+    }
+    #events{display: flex;}
+    #e2 img{width: 50vw;}
+    #e2{display: contents;}
+    #hText{font-size: 2em;}
+    
+}

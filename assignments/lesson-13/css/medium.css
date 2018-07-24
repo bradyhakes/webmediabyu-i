@@ -1,0 +1,35 @@
+@media only screen and (min-width: 37.5em){
+    #logo{
+        justify-content: flex-start;
+        padding: 5px;
+        width: 18vw;
+        height: 18vw;
+        align-items: flex-start;
+    }
+    header{
+            justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+       flex-direction: row;
+        justify-content: space-between;
+}
+    li{
+        width: 19vw;
+    }
+    
+    #ride, #rideL{
+        font-size: 3em;
+    }
+    #mrow{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #e1 {display: contents;}
+    #e1 img {width: 50vw;}
+    #right{
+        display: contents;
+        
+    }
+}
